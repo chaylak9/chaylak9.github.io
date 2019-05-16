@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BHNC: About Us</title>
+		<link rel="icon" href="./images/icon.png">
+	
+	<style>
+		* {
+			font-family: Helvetica;
+		}		
+
+		body {
+			background-color: white;
+		}
+		
+		header, footer {background-color: white;}
+		
+		main {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			background-color: white;
+		}
+		
+		section, aside {
+			background-color: #333244;
+			font-size: 300%;
+			color: white;
+			margin: 15px 15px;
+ 			padding: 25px 25px;
+			text-align: center;
+			width: 30%;
+			margin: 10px;
+			padding: 10px;
+		}
+		section a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		section {
+			flex-basis: 75%;
+		}
+		aside {
+			flex-basis: 25%;
+		}
+
+	.footer {
+	position: absolute;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #9c9ca4;
+	bottom: 0;
+	left: 0;
+	}
+
+	.footertext {
+	padding-left: 15px;
+	color: white;
+	width:98%;
+	}
+
+		@media screen and (max-width: 760px){
+			main {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			section {
+				order: 2;
+			}
+			
+			aside {
+				order: 1;}
+			}  
+		}
+
+	</style>
+	
+</head>
+<body>
+	<header><div align="center"><img src="./Images/background-image.png"></div>
+	</header>
+	<main>
+		<section><a href="Home.html"><h3>English</h3></a></section>
+		<section><a href="Home.html"><h3>Español</h3></a></section>
+		<section><a href="Home.html"><h3>中文</h3></a></section>
+	</main>
+	<div class="footer">
+		<div class="footertext">
+		Bernal Heights Neighborhood Center
+		<br>515 Cortland Ave | San Francisco, CA 94110 | 415.206.2140
+	</div></div>
+</body>
+</html>
